@@ -1,0 +1,39 @@
+<MainWidget>:
+ 
+    cols: 2 
+    rows: 3
+
+    row_force_default: True
+    row_default_height: 170
+    
+    Button:       
+        text: 'Maksimum punktisumma'
+        size_hint_x: None
+        width: 170
+
+    TextInput:
+        id: max_input
+        multiline: False
+        size_hint: (1, .5)
+
+    Button:
+        text: 'Õpilase punktisumma'
+        size_hint_x: None
+        width: 170
+    
+    TextInput:
+        id: min_input
+        multiline: False
+        size_hint: (1, .5)
+
+    Button:       
+        text: 'Tulemus'
+        size_hint_x: None
+        width: 170
+        on_press: root.press()
+
+    Label:
+        id: name_label
+        text: "Protsent"
+        font_size: 28
+    
